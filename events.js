@@ -1,4 +1,6 @@
-[
+// Data for Atlanta events
+
+const events = [
     {
       "name": "The Moth",
       "location": "Theatrical Outfit - The Balzer Theater",
@@ -80,4 +82,5 @@
       "link": "https://redlightcafe.com/events/dad-bod-review-fundraiser-lost-n-found-youth-feb-24-2024"
     }
   ]
-  
+
+export default events;
