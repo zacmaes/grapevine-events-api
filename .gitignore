@@ -1,0 +1,26 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore Linux system files
+lost+found/
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore build output
+dist/
+build/
+out/
+
+# Ignore log files
+*.log
+
+# Ignore environment variables file
+.env

@@ -1,0 +1,22 @@
+{
+  "name": "grapevine-events-api",
+  "version": "1.0.0",
+  "description": "microservice api that serves local atlanta events",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacmaes/grapevine-events-api.git"
+  },
+  "author": "zacmaes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacmaes/grapevine-events-api/issues"
+  },
+  "homepage": "https://github.com/zacmaes/grapevine-events-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
