@@ -12,11 +12,11 @@ app.get('/events', (req, res) => {
 
 // Get events by name
 app.get('/events/:name', (req, res) => {
-    const { name } = req.params;  //  uses parameter destructuring to get the name parameter from the request
+    const { name } = req.params;  // uses parameter destructuring to get the name parameter from the request
 
-    const eventName = name.replace(/-/g, ' ');  // Replace hyphens with spaces
-    
-    const matchingEvents = events.filter(event => event.name === eventName);  // Filter events to include all that match the given name
+    const eventName = name.replace(/-/g, ' ').toLowerCase();  // Replace hyphens with spaces and convert to lowercase
+
+    const matchingEvents = events.filter(event => event.name.toLowerCase() === eventName);  // Filter events to include all that match the given name, case-insensitively
 
     if (matchingEvents.length === 0) {
         return res.status(404).json({ error: 'Event not found' });
@@ -24,6 +24,7 @@ app.get('/events/:name', (req, res) => {
 
     res.status(200).json(matchingEvents);
 });
+
 
 // Handle non existent routes
 app.use((req, res, next) => {
