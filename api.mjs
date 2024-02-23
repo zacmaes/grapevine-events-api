@@ -1,9 +1,12 @@
 import express from 'express';
 import events from './events.mjs';
+import cors from 'cors';
 
 const app = express();
-const port = 8081;
+const port = 8081;  // Port to listen on
 
+// Use CORS middleware
+app.use(cors());
 
 // Get all events
 app.get('/events', (req, res) => {

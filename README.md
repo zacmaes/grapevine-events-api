@@ -54,6 +54,13 @@ After running the above command, the server will be running on `http://localhost
 - **404 Not Found:** Returned when a requested resource cannot be found.
 - **500 Internal Server Error:** Indicates an unexpected condition that prevented the server from fulfilling the request.
 
-## Development and Contributions
+## Development
 
 - The event data is currently static, loaded from `events.mjs`. To update or add new events, modify this file.
+- You may or may not need to change the cors middleware to add your origin url (ask Zac for assistance if cors issues arise.)
+- You may change the `const port = 8081;` to whatever port number you want to use for the microservice.
+
+## UML Sequence Diagram
+
+![EventsAPIUML](EventsAPIUML.png)
+
