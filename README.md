@@ -34,14 +34,22 @@ After running the above command, the server will be running on `http://localhost
 ## API Routes
 
 ### Get All Events
-
+```HTTP
+GET /events HTTP/1.1
+Host: http://localhost:8081
+Accept: application/json
+```
 - **Endpoint:** `/events`
 - **Method:** `GET`
 - **Description:** Retrieves a list of all events.
 - **Success Response:** Code 200 (OK), returns an array of events.
 
 ### Get Events by Name
-
+```HTTP
+GET /events/:name HTTP/1.1
+Host: http://localhost:8081
+Accept: application/json
+```
 - **Endpoint:** `/events/:name`
 - **Method:** `GET`
 - **Description:** Retrieves events matching a specific name. The name should be hyphenated if it consists of multiple words. For example: "The Moth" should be 'the-moth' inside the url. The api will return all events that match the name. Functunality has been included to allow for spaces (%20) to be read instead of hyphens. The url param names may also be sent case-insensitively.
