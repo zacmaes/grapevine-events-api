@@ -39,6 +39,9 @@ GET /events HTTP/1.1
 Host: http://localhost:8081
 Accept: application/json
 ```
+```
+Example URL: http://localhost:8081/events
+```
 - **Endpoint:** `/events`
 - **Method:** `GET`
 - **Description:** Retrieves a list of all events.
@@ -49,6 +52,9 @@ Accept: application/json
 GET /events/:name HTTP/1.1
 Host: http://localhost:8081
 Accept: application/json
+```
+```
+Example URL: http://localhost:8081/events/the-moth
 ```
 - **Endpoint:** `/events/:name`
 - **Method:** `GET`
